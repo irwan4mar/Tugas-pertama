@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile Biodata</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            background-color: #f4f4f9;
+            color: #333;
+            margin: 20px;
+        }
+
+        header {
+            display: flex;
+            justify-content: space-between;
+            background-color: #4caf50;
+            padding: 10px 20px;
+            color: white;
+            border-radius: 8px;
+
+        }
+
+        header a {
+            color: white;
+            text-decoration: none;
+            margin: 0 10px;
+        }
+
+        .section {
+            margin: 20px;
+            padding: 20px;
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        .grid-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+            align-items: center; /* Agar elemen vertikal sejajar di tengah */
+        }
+
+        @media (max-width: 768px) {
+            .grid-container {
+                grid-template-columns: 1fr; /* Satu kolom untuk layar kecil */
+            }
+        }
+
+        .grid-item {
+            padding: 20px;
+            background-color: #e8f5e9;
+            border: 1px solid #c8e6c9;
+            border-radius: 8px;
+            text-align: center;
+        }
+        
+        .styled-photo2 {
+            max-width: 100%; /* Membuat gambar responsif */
+            height: auto; /* Menjaga proporsi gambar */
+            border: 5px solid #ddd; /* Tambahkan border */
+            border-radius: 15px; /* Buat sudut melengkung */
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Efek bayangan */
+        }
+
+        .styled-photo {
+            width: 300px; /* Sesuaikan ukuran foto */
+            border: 5px solid #ddd; /* Tambahkan border */
+            border-radius: 15px; /* Buat sudut melengkung */
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Efek bayangan */
+        }
+
+        .portfolio-item img {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+        }
+
+        footer {
+            text-align: center;
+            margin: 20px 0;
+            padding: 10px;
+            background-color: #4caf50;
+            color: white;
+            border-radius: 8px;
+        }
+
+        h1, h2 {
+            color: #4caf50;
+            font-size: 50px;
+            line-height: 1;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div><a href="#about">Home</a></div>
+        <div>
+            <a href="#about-me">About Me</a>
+            <a href="#portfolio">Portfolio</a>
+        </div>
+    </header>
+    <!-- Section 2: Judul di Kiri dan Gambar di Kanan -->
+    <section class="section" id="about">
+        <div class="grid-container">
+            <div>
+                <h1>Selamat Datang di Profil Saya</h1>
+                <p style="text-align: justify;">Seorang web developer adalah individu yang bertanggung jawab untuk merancang, membangun, dan memelihara situs web atau aplikasi berbasis web.
+                    Profesi ini membutuhkan keterampilan teknis yang kuat, termasuk pemahaman tentang bahasa pemrograman seperti HTML, CSS, JavaScript, 
+                    dan framework pendukung seperti React atau Angular. Web developer juga sering kali harus mengintegrasikan teknologi backend menggunakan bahasa 
+                    seperti PHP, Python, atau Node.js untuk memastikan fungsi situs berjalan lancar. Selain aspek teknis, mereka juga dituntut untuk memahami desain antarmuka 
+                    pengguna (UI) dan pengalaman pengguna (UX) demi menciptakan situs yang menarik dan mudah digunakan. Kemampuan untuk terus belajar adalah kunci dalam bidang ini, 
+                    karena teknologi web terus berkembang. Pekerjaan ini memberikan peluang besar, mengingat permintaan yang tinggi untuk situs web dan aplikasi dalam berbagai industri di era digital ini.
+                    Senang bisa berinteraksi dengan anda, silahkan nilai diri saya dengan project yang saya kerjakan</p>
+            </div>
+            <div style="text-align: center;">
+                <img src="https://images.pexels.com/photos/2379004/pexels-photo-2379004.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" class="styled-photo" alt="Profile Picture" />
+            </div>
+        </div>
+    </section>
+    <!-- Section 3: Biodata dengan 6 Box -->
+    <section class="section" id="about-me">
+        <h2 style="text-align: center;">About Me</h2>
+        <p style="text-align: justify;">Hi, perkenalkan saya Irwan Amar, seorang staff dan pengajar dengan pengalaman 2 tahun dibidang mengajar. 
+            Selain itu, saya juga sedang menggeluti bidang Wordpress Developer dan sekarang ini sedang belajar Fullstack Web Programming.
+            selama karier saya, saya telah banyak belajar bahasa pemrograman untuk bisa berkembang sebagai Web Developer.
+            Saya percaya bahwa semangat, kesungguhan dan ketekunan bisa mengubah diri dan lingkungan saya menjadi seorang yang mumpuni di bidang Teknologi Informasi.
+            Saya selalu terbuka untuk berkolaborasi dengan siapapun. Jangan ragu untuk menghubungi saya.
+            Yuuk, belajar dan bertumbuh bersama!!! </p>
+        <div class="grid-container">
+            <div class="grid-item">
+                <h3>Full Name</h3>
+                <p>Irwan Amar</p>
+            </div>
+            <div class="grid-item">
+                <h3>Education</h3>
+                <p>Administrasi Negara</p>
+            </div>
+            <div class="grid-item">
+                <h3>Pekerjaan</h3>
+                <p>Staff dan Pengajar</p>
+            </div>
+            <div class="grid-item">
+                <h3>Contact</h3>
+                <p>irwanamar@example.com</p>
+            </div>
+            <div class="grid-item">
+                <h3>Hobi</h3>
+                <p>Baca Buku dan Olahraga</p>
+            </div>
+            <div class="grid-item">
+                <h3>Alamat</h3>
+                <p>Kendari, Sulawesi Tenggara</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section 4: Portfolio dengan 3 Box -->
+    <section class="section" id="portfolio">
+        <h2 style="text-align: center;" >Portfolio</h2>
+        <div class="grid-container">
+            <div class="portfolio-item">
+                <h3>Proyek 1</h3>
+                <img src="https://cdn.prod.website-files.com/635269ebb15f7aac963b096c/6364e494853c650a680b171f_2.png" alt="Proyek 1">
+            </div>
+            <div class="portfolio-item">
+                <h3>Proyek 2</h3>
+                <img src="https://5.imimg.com/data5/SELLER/Default/2023/1/GQ/VP/DZ/94000774/personal-portfolio-website-500x500.jpg" alt="Proyek 2">
+            </div>
+            <div class="portfolio-item">
+                <h3>Proyek 3</h3>
+                <img src="https://img.freepik.com/premium-psd/personal-portfolio-template-design_269473-11.jpg" alt="Proyek 3">
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>Copyright@irwanamar2024</p>
+    </footer>
+</body>
+</html>
